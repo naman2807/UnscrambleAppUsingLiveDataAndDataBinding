@@ -54,6 +54,10 @@ class GameFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //Sets the value of variable in layout file.
+        binding.gameViewModel = viewModel
+        binding.maxNumberOfWords = MAX_NO_OF_WORDS
+
         // Setup a click listener for the Submit and Skip buttons.
         binding.submit.setOnClickListener { onSubmitWord() }
         binding.skip.setOnClickListener { onSkipWord() }
