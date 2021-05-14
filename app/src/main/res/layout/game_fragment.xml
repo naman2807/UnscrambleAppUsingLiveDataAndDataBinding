@@ -22,6 +22,9 @@
         <variable
             name="gameViewModel"
             type="com.example.android.unscramble.ui.game.GameViewModel" />
+        <variable
+            name="maxNumberOfWords"
+            type="int" />
     </data>
 
     <ScrollView
